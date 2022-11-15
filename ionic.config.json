@@ -1,0 +1,7 @@
+{
+  "name": "tugas3_1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+}
