@@ -54,7 +54,7 @@ import {
 } from "@ionic/vue";
 import { defineComponent, ref } from "vue";
 import { useRoute } from "vue-router";
-import { paw } from "ionicons/icons";
+import { paw ,apps} from "ionicons/icons";
 
 export default defineComponent({
     name: "App",
@@ -80,6 +80,11 @@ export default defineComponent({
                 url: "/pages/tentang",
                 iosIcon: paw,
                 mdIcon: paw,
+            },{
+                title: "Aplikasi Sharing",
+                url: "/pages/sharing-app",
+                iosIcon: apps,
+                mdIcon: apps,
             },
         ];
 
@@ -95,7 +100,6 @@ export default defineComponent({
         return {
             selectedIndex,
             appPages,
-            paw,
             isSelected: (url: string) => (url === route.path ? "selected" : ""),
         };
     },

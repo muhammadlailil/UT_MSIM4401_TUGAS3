@@ -13,6 +13,10 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/pages/tentang',
     component: () => import ('../views/TentangPage.vue')
+  },
+  {
+    path: '/pages/sharing-app',
+    component: () => import ('../views/SharingAppPage.vue')
   }
 ]
 

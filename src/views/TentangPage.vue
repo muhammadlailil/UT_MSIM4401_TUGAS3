@@ -38,7 +38,7 @@ import {
     IonBackButton
 } from "@ionic/vue";
 
-import { close,arrowBack } from "ionicons/icons";
+import { arrowBack } from "ionicons/icons";
 export default defineComponent({
     name: "HomePage",
     components: {
@@ -51,14 +51,7 @@ export default defineComponent({
     },
     setup() {
         return {
-            close,arrowBack
-        };
-    },
-    data() {
-        return {
-            getBackButtonText() {
-                return "lorem";
-            },
+            arrowBack
         };
     },
 });
